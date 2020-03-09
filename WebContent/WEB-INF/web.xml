@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element> 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PropertyAdvertiser</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- REGISTRATION SERVLET -->
+  
+  <servlet>
+  	<servlet-name>registerServlet</servlet-name>
+  	<servlet-class>controller.RegisterServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>registerServlet</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <!-- LOGIN SERVLET -->
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>controller.LoginServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  
+    <!-- EDIT SELLER PROFILE -->
+  
+  <servlet>
+  	<servlet-name>editSellerServlet</servlet-name>
+  	<servlet-class>controller.EditSellerServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>editSellerServlet</servlet-name>
+  	<url-pattern>/editSeller</url-pattern>
+  </servlet-mapping>
+  
+      <!-- EDIT ADMIN PROFILE -->
+  
+  <servlet>
+  	<servlet-name>editAdminServlet</servlet-name>
+  	<servlet-class>controller.EditAdminServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>editAdminServlet</servlet-name>
+  	<url-pattern>/editAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <!-- CHANGE PASSWORD -->
+  
+   <servlet>
+  	<servlet-name>changePasswordServlet</servlet-name>
+  	<servlet-class>controller.ChangePasswordServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>changePasswordServlet</servlet-name>
+  	<url-pattern>/changePassword</url-pattern>
+  </servlet-mapping>
+  
+     <!-- CHANGE PASSWORD -->
+  
+   <servlet>
+  	<servlet-name>soldProperties</servlet-name>
+  	<servlet-class>controller.SoldProperties</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>soldProperties</servlet-name>
+  	<url-pattern>/SoldProperties</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AdVERTISING TERMS -->
+  
+   <servlet>
+  	<servlet-name>advertisingTermsServlet</servlet-name>
+  	<servlet-class>controller.AdvertisingTermsServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>advertisingTermsServlet</servlet-name>
+  	<url-pattern>/advertisingTerms</url-pattern>
+  </servlet-mapping>
+  
+  <!-- EDIT AdVERTISING TERMS -->
+  
+   <servlet>
+  	<servlet-name>editTermsServlet</servlet-name>
+  	<servlet-class>controller.EditTermsServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>editTermsServlet</servlet-name>
+  	<url-pattern>/editTerms</url-pattern>
+  </servlet-mapping>
+  
+   <!-- CHAT SERVLET -->
+  
+  <servlet>
+  	<servlet-name>chatServlet</servlet-name>
+  	<servlet-class>controller.ChatServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>chatServlet</servlet-name>
+  	<url-pattern>/chat</url-pattern>
+  </servlet-mapping>
+  
+     <!-- FLAG SOLD SERVLET -->
+  
+  <servlet>
+  	<servlet-name>flagSoldServlet</servlet-name>
+  	<servlet-class>controller.ChatServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>flagSoldServlet</servlet-name>
+  	<url-pattern>/FlagSoldServlet</url-pattern>
+  </servlet-mapping>
+  
+    <!-- BLACKLIST SERVLET -->
+  
+  <servlet>
+  	<servlet-name>blacklistServlet</servlet-name>
+  	<servlet-class>controller.BlacklistServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>blacklistServlet</servlet-name>
+  	<url-pattern>/BlacklistServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- LISTINGS MANAGEMENT SERVLET -->
+  
+  <servlet>
+  	<servlet-name>listingsManagementServlet</servlet-name>
+  	<servlet-class>controller.ListingsManagementServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>listingsManagementServlet</servlet-name>
+  	<url-pattern>/ListingsManagementServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!-- LIST PROPERTY SERVLET -->
+  
+  <servlet>
+  	<servlet-name>listPropertyServlet</servlet-name>
+  	<servlet-class>controller.ListPropertyServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>listPropertyServlet</servlet-name>
+  	<url-pattern>/ListPropertyServlet</url-pattern>
+  </servlet-mapping>
+  
+   <!-- ADVERTISE SERVLET -->
+  
+  <servlet>
+  	<servlet-name>advertiseServlet</servlet-name>
+  	<servlet-class>controller.ChatServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>advertiseServlet</servlet-name>
+  	<url-pattern>/AdvertiseServlet</url-pattern>
+  </servlet-mapping>
+  
+    <!-- GET PROPERTIES SERVLET -->
+  
+  <servlet>
+  	<servlet-name>getPropertiesServlet</servlet-name>
+  	<servlet-class>controller.ChatServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>getPropertiesServlet</servlet-name>
+  	<url-pattern>/GetPropertiesServlet</url-pattern>
+  </servlet-mapping>
+  
+          <!-- MANAGE PROPERTIES SERVLET -->
+  
+  <servlet>
+  	<servlet-name>managePropertiesServlet</servlet-name>
+  	<servlet-class>controller.ManagePropertiesServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>managePropertiesServlet</servlet-name>
+  	<url-pattern>/ManagePropertiesServlet</url-pattern>
+  </servlet-mapping>
+  
+         <!-- ADD PROPERTY SERVLET -->
+  <servlet>
+  	<servlet-name>addPropertyServlet</servlet-name>
+  	<servlet-class>controller.AddPropertyServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>addPropertyServlet</servlet-name>
+  	<url-pattern>/addProperty</url-pattern>
+  </servlet-mapping>
+  
+           <!-- EDIT PROPERTY SERVLET -->
+  <servlet>
+  	<servlet-name>editPropertyServlet</servlet-name>
+  	<servlet-class>controller.EditPropertyServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>editPropertyServlet</servlet-name>
+  	<url-pattern>/editProperty</url-pattern>
+  </servlet-mapping>
+  
+        <!-- LOGOUT SERVLET -->
+  
+  <servlet>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<servlet-class>controller.LogoutServlet</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+</element>
